@@ -1,0 +1,4 @@
+interface:
+  display_name: "iOS Resizability & iPhone Duo"
+  short_description: "Evaluate or implement version-aware Duo readiness"
+  default_prompt: "Use $ios-resizability-duo to assess this app, establish my main Xcode version, and ask whether I want evaluation only or evaluation with full implementation."
