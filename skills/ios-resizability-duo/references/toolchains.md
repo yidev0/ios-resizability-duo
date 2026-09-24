@@ -57,9 +57,16 @@ These distinctions apply to SwiftUI and UIKit. System-container migration can be
 | `UIArrangementViewController` | 27.1 | [Apple declaration](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller) |
 | `UITraitCollection.verticalBarEdge` | 27.1 | [Apple declaration](https://developer.apple.com/documentation/uikit/uitraitcollection/verticalbaredge) |
 | `UIView.ReservedRegion` | 27.1 | [Apple declaration](https://developer.apple.com/documentation/uikit/uiview/reservedregion) |
+| `EnvironmentValues.splitArrangementAxis` | 27.1 | [Apple declaration](https://developer.apple.com/documentation/swiftui/environmentvalues/splitarrangementaxis); an axis value is not proof both children are visible. |
+| `UITabBarController.Sidebar.preferredPlacement` | 27.0 | [Apple declaration](https://developer.apple.com/documentation/uikit/uitabbarcontroller/sidebar-swift.class/preferredplacement) |
+| `UISheetPresentationController.preferredPlacement` | 27.0 | [Apple declaration](https://developer.apple.com/documentation/uikit/uisheetpresentationcontroller/preferredplacement) |
+| `UIBarButtonItem.axisBehavior` | 27.1 | [Apple declaration](https://developer.apple.com/documentation/uikit/uibarbuttonitem/axisbehavior-swift.enum) |
+| `UIView.LayoutRegion.bar(onEdge:extent:)` | 27.1 | [Apple declaration](https://developer.apple.com/documentation/uikit/uiview/layoutregion) |
+| `AVCaptureDeviceDirectionCoordinator` | 27.1 | [Apple declaration](https://developer.apple.com/documentation/avkit/avcapturedevicedirectioncoordinator/init%28view%3Adevicetypes%3Achangehandler%3A%29) |
+| `AVCaptureDevice.DiscoverySession.supportedMultiCamDeviceSets` | 13.0 | [Apple declaration](https://developer.apple.com/documentation/avfoundation/avcapturedevice/discoverysession/supportedmulticamdevicesets); preexisting discovery API. |
 | `CMMotionManager.deviceMotionBody` | 27.0 | [Apple declaration](https://developer.apple.com/documentation/coremotion/cmmotionmanager/devicemotionbody) |
 
-This is a verified subset, not blanket availability for each framework. The UIKit/Core Motion rows were checked on 2026-09-24. Check any unlisted counterparts independently. Never assume everything discussed in a Duo talk is new in 27.1, or that everything called “iOS 27” shipped in 27.0. The official lab summary also explicitly excludes `ArrangementView` and `UIArrangementViewController` from 27.0; broad “iOS 27” wording elsewhere in that thread does not override the declarations.
+This is a verified subset, not blanket availability for each framework. The new UIKit/AVKit/AVFoundation rows were checked against locally installed iOS 27.0 and 27.1 SDK headers on 2026-09-24; confirm SwiftUI and later beta declarations in the active SDK before coding. Check any unlisted counterparts independently. Never assume everything discussed in a Duo talk is new in 27.1, or that everything called “iOS 27” shipped in 27.0. The official lab summary also explicitly excludes `ArrangementView` and `UIArrangementViewController` from 27.0; broad “iOS 27” wording elsewhere in that thread does not override the declarations.
 
 ## Compile-time and runtime are separate gates
 
