@@ -48,3 +48,7 @@ A custom tab bar built from ordinary views or buttons does not acquire system si
 - [Verification and reporting](skills/ios-resizability-duo/references/verification.md)
 - [Dated source ledger and refresh policy](skills/ios-resizability-duo/references/sources.md)
 - [Read-only Xcode inventory helper](skills/ios-resizability-duo/scripts/inspect_xcodes.py)
+
+## License
+
+MIT. See [LICENSE](LICENSE).
